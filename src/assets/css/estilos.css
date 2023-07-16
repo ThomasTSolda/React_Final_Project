@@ -1,0 +1,191 @@
+ @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300&display=swap'); 
+ * {
+     margin: 0;
+     padding: 0;
+     /* font-family: 'Cormorant';*/
+ }
+
+ .cabecalho {
+     min-height: 400px;
+     text-align: left;
+     padding: 10px;
+     background-image: url("../images/back4.jpg");
+     background-size: cover;
+     width: 100%;
+     height: relative;
+
+
+ }
+
+ .cabecalho h1 {
+     margin-top: 9rem;
+     margin-left: 4rem;
+     font-family: 'Martian Mono', monospace;
+ }
+
+ .corpo {
+     min-height: 180px;
+     background-color: #e8e8e8;
+     border-radius: 10px;
+     padding: 10px;
+     margin-top: 10px;
+     margin-bottom: 10px;
+ }
+
+ .rodape {
+
+     min-height: 200px;
+     background-image: url("../images/back2.jpg");
+     background-size: cover;
+ }
+
+ .rodape p {
+     color: #e8e8e8;
+     font-size: 12px;
+     text-align: center;
+     margin-top: 4rem;
+
+ }
+
+ .rodape .alunos {
+     color: #e8e8e8;
+     font-size: 20px;
+     text-align: left;
+     margin-left: 20px;
+     padding-top: 40px;
+ }
+
+ .rodape .copyright {
+     text-align: center;
+
+
+ }
+
+ .menu {
+     width: 100%;
+     margin-top: 10px;
+     display: flex;
+     align-items: center;
+ }
+
+ .button,
+ .button_menu {
+    padding: 10px 15px;
+    border: 30px;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    float: left;
+    margin-top: 1%;
+    margin-left: 5px;
+    font-size: large;
+    display: flex;
+    align-items: center;
+ }
+
+
+
+ .button:before,
+ .button_menu:before {
+     content: "";
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 100%;
+     width: 0;
+     border-radius: 15px;
+     background-color: #212121;
+     z-index: -1;
+     -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+     box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+     transition: all 250ms
+ }
+
+ .button:hover,
+ .button_menu:hover{
+     cursor: pointer;
+     color: #e8e8e8;
+ }
+
+ .button:hover::before,
+ .button_menu:hover::before {
+     width: 100%;
+ }
+
+ .api {
+     width: 125%;
+     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+
+ }
+
+ table {
+     border: 1px solid #000000;
+     border-radius: 14px 0px 0px 0px;
+
+ }
+
+ .login {
+     background-image: url("../images/wppStar.jpg");
+     background-size: cover;
+ }
+
+ .title {
+    font-size: 25px;   
+    font-family: 'Cormorant';
+    text-align:left;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+ }
+
+ .img {
+     float: left;
+     width: 30%;
+     border: thin solid;
+     padding: 10px;
+     margin: 0px 10px 10px 0;
+     -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+     -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
+ }
+
+ .card {
+     display: flex;
+     align-items: center;
+     flex-direction: row;
+     margin-top: 20px;
+ }
+
+ .leonardo {
+     display: flex;
+     align-items: center;
+     margin-left: 200px;
+     flex-direction: column;
+ }
+
+ .thomas {
+     display: flex;
+     align-items: center;
+     flex-direction: column;
+     margin-left: -500px;
+ }
+
+ @media screen and (max-width: 1400px) {
+    .thomas {
+        margin-left: -550px;
+    }
+
+    .leonardo {
+        margin-left: 13px;
+    }
+ }
